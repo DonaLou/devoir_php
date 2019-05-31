@@ -1,0 +1,148 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 -- phpMyAdmin SQL Dump\
+-- version 4.8.5\
+-- https://www.phpmyadmin.net/\
+--\
+-- H\'f4te : localhost:8889\
+-- G\'e9n\'e9r\'e9 le :  mer. 29 mai 2019 \'e0 17:30\
+-- Version du serveur :  5.7.25\
+-- Version de PHP :  7.3.1\
+\
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";\
+SET time_zone = "+00:00";\
+\
+--\
+-- Base de donn\'e9es :  `base1`\
+--\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Structure de la table `article`\
+--\
+\
+CREATE TABLE `article` (\
+  `id_article` int(11) NOT NULL,\
+  `titre_article` varchar(255) NOT NULL,\
+  `contenu_article` longtext NOT NULL,\
+  `urlImgArticle` varchar(255) DEFAULT NULL,\
+  `date_article` date NOT NULL,\
+  `id_categorie` int(11) NOT NULL\
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;\
+\
+--\
+-- D\'e9chargement des donn\'e9es de la table `article`\
+--\
+\
+INSERT INTO `article` (`id_article`, `titre_article`, `contenu_article`, `urlImgArticle`, `date_article`, `id_categorie`) VALUES\
+(3, 'Voiture 1', 'Le Lorem Ipsum est simplement du faux texte employ\'e9 dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\\'imprimerie depuis les ann\'e9es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r\'e9aliser un livre sp\'e9cimen de polices de texte. Il n\\'a pas fait que survivre cinq si\'e8cles, mais s\\'est aussi adapt\'e9 \'e0 la bureautique informatique, sans que son contenu n\\'en soit modifi\'e9. Il a \'e9t\'e9 popularis\'e9 dans les ann\'e9es 1960 gr\'e2ce \'e0 la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r\'e9cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', '9f364dc1f447433f56924d0625030741.jpg', '2019-05-29', 4),\
+(4, 'Voiture 2', 'Le Lorem Ipsum est simplement du faux texte employ\'e9 dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\\'imprimerie depuis les ann\'e9es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r\'e9aliser un livre sp\'e9cimen de polices de texte. Il n\\'a pas fait que survivre cinq si\'e8cles, mais s\\'est aussi adapt\'e9 \'e0 la bureautique informatique, sans que son contenu n\\'en soit modifi\'e9. Il a \'e9t\'e9 popularis\'e9 dans les ann\'e9es 1960 gr\'e2ce \'e0 la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r\'e9cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', '0cbe3182b350b8bb461a781aa9d3f9d8.jpg', '2019-05-29', 4),\
+(5, 'Voiture 3', 'Le Lorem Ipsum est simplement du faux texte employ\'e9 dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\\'imprimerie depuis les ann\'e9es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r\'e9aliser un livre sp\'e9cimen de polices de texte. Il n\\'a pas fait que survivre cinq si\'e8cles, mais s\\'est aussi adapt\'e9 \'e0 la bureautique informatique, sans que son contenu n\\'en soit modifi\'e9. Il a \'e9t\'e9 popularis\'e9 dans les ann\'e9es 1960 gr\'e2ce \'e0 la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r\'e9cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', '89c3dd4c7cde386e440feba7469db1f7.jpg', '2019-05-29', 4),\
+(6, 'Animaux 1', 'Le Lorem Ipsum est simplement du faux texte employ\'e9 dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\\'imprimerie depuis les ann\'e9es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r\'e9aliser un livre sp\'e9cimen de polices de texte. Il n\\'a pas fait que survivre cinq si\'e8cles, mais s\\'est aussi adapt\'e9 \'e0 la bureautique informatique, sans que son contenu n\\'en soit modifi\'e9. Il a \'e9t\'e9 popularis\'e9 dans les ann\'e9es 1960 gr\'e2ce \'e0 la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r\'e9cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', '7f40df08bfe8c5b259ed4b92f37a85d4.jpg', '2019-05-29', 5),\
+(7, 'Animaux 2', 'Le Lorem Ipsum est simplement du faux texte employ\'e9 dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\\'imprimerie depuis les ann\'e9es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r\'e9aliser un livre sp\'e9cimen de polices de texte. Il n\\'a pas fait que survivre cinq si\'e8cles, mais s\\'est aussi adapt\'e9 \'e0 la bureautique informatique, sans que son contenu n\\'en soit modifi\'e9. Il a \'e9t\'e9 popularis\'e9 dans les ann\'e9es 1960 gr\'e2ce \'e0 la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r\'e9cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', '9fb428ca74bff2f28883b7fc7499dc76.jpg', '2019-05-29', 5),\
+(8, 'Animaux 3', 'Le Lorem Ipsum est simplement du faux texte employ\'e9 dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\\'imprimerie depuis les ann\'e9es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r\'e9aliser un livre sp\'e9cimen de polices de texte. Il n\\'a pas fait que survivre cinq si\'e8cles, mais s\\'est aussi adapt\'e9 \'e0 la bureautique informatique, sans que son contenu n\\'en soit modifi\'e9. Il a \'e9t\'e9 popularis\'e9 dans les ann\'e9es 1960 gr\'e2ce \'e0 la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r\'e9cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 'fb6760232c5aa75d745d7d4e31f887ac.jpg', '2019-05-29', 5),\
+(9, 'Fleur 1', 'Le Lorem Ipsum est simplement du faux texte employ\'e9 dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\\'imprimerie depuis les ann\'e9es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r\'e9aliser un livre sp\'e9cimen de polices de texte. Il n\\'a pas fait que survivre cinq si\'e8cles, mais s\\'est aussi adapt\'e9 \'e0 la bureautique informatique, sans que son contenu n\\'en soit modifi\'e9. Il a \'e9t\'e9 popularis\'e9 dans les ann\'e9es 1960 gr\'e2ce \'e0 la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r\'e9cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 'be07f5a76604a92c011fb24e497825ec.jpg', '2019-05-29', 6),\
+(10, 'Fleur 2', 'Le Lorem Ipsum est simplement du faux texte employ\'e9 dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\\'imprimerie depuis les ann\'e9es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r\'e9aliser un livre sp\'e9cimen de polices de texte. Il n\\'a pas fait que survivre cinq si\'e8cles, mais s\\'est aussi adapt\'e9 \'e0 la bureautique informatique, sans que son contenu n\\'en soit modifi\'e9. Il a \'e9t\'e9 popularis\'e9 dans les ann\'e9es 1960 gr\'e2ce \'e0 la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r\'e9cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', '286830ef0c00c5e38ac97c5163789f84.jpg', '2019-05-29', 6),\
+(11, 'Fleur 3', 'Le Lorem Ipsum est simplement du faux texte employ\'e9 dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\\'imprimerie depuis les ann\'e9es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r\'e9aliser un livre sp\'e9cimen de polices de texte. Il n\\'a pas fait que survivre cinq si\'e8cles, mais s\\'est aussi adapt\'e9 \'e0 la bureautique informatique, sans que son contenu n\\'en soit modifi\'e9. Il a \'e9t\'e9 popularis\'e9 dans les ann\'e9es 1960 gr\'e2ce \'e0 la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r\'e9cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 'a9baf64209e46cc75301d1d4a7b86e6d.jpg', '2019-05-29', 6);\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Structure de la table `categorie`\
+--\
+\
+CREATE TABLE `categorie` (\
+  `id_categorie` int(11) NOT NULL,\
+  `nom_categorie` varchar(255) NOT NULL\
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;\
+\
+--\
+-- D\'e9chargement des donn\'e9es de la table `categorie`\
+--\
+\
+INSERT INTO `categorie` (`id_categorie`, `nom_categorie`) VALUES\
+(4, 'voiture'),\
+(5, 'animaux'),\
+(6, 'fleur');\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Structure de la table `user`\
+--\
+\
+CREATE TABLE `user` (\
+  `id_user` int(11) NOT NULL,\
+  `email_user` varchar(255) NOT NULL,\
+  `pwd_user` varchar(255) NOT NULL\
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;\
+\
+--\
+-- D\'e9chargement des donn\'e9es de la table `user`\
+--\
+\
+INSERT INTO `user` (`id_user`, `email_user`, `pwd_user`) VALUES\
+(1, 'toto@toto.fr', '$2y$10$wEzYpBbBOABPcWJeTXgCfe2iA0o.hUhDnwE/tMZu/pDGk8SzIiCVW');\
+\
+--\
+-- Index pour les tables d\'e9charg\'e9es\
+--\
+\
+--\
+-- Index pour la table `article`\
+--\
+ALTER TABLE `article`\
+  ADD PRIMARY KEY (`id_article`),\
+  ADD KEY `article_categorie_FK` (`id_categorie`);\
+\
+--\
+-- Index pour la table `categorie`\
+--\
+ALTER TABLE `categorie`\
+  ADD PRIMARY KEY (`id_categorie`);\
+\
+--\
+-- Index pour la table `user`\
+--\
+ALTER TABLE `user`\
+  ADD PRIMARY KEY (`id_user`),\
+  ADD UNIQUE KEY `email_user` (`email_user`);\
+\
+--\
+-- AUTO_INCREMENT pour les tables d\'e9charg\'e9es\
+--\
+\
+--\
+-- AUTO_INCREMENT pour la table `article`\
+--\
+ALTER TABLE `article`\
+  MODIFY `id_article` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;\
+\
+--\
+-- AUTO_INCREMENT pour la table `categorie`\
+--\
+ALTER TABLE `categorie`\
+  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;\
+\
+--\
+-- AUTO_INCREMENT pour la table `user`\
+--\
+ALTER TABLE `user`\
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;\
+\
+--\
+-- Contraintes pour les tables d\'e9charg\'e9es\
+--\
+\
+--\
+-- Contraintes pour la table `article`\
+--\
+ALTER TABLE `article`\
+  ADD CONSTRAINT `article_categorie_FK` FOREIGN KEY (`id_categorie`) REFERENCES `categorie` (`id_categorie`);\
+}
